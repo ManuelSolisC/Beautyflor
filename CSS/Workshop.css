@@ -1,0 +1,363 @@
+.BackgroundImagen {
+  /*background-size: auto|length|cover|contain|initial|inherit; recordarlo*/
+  background: url(../IMG/home.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  background-color: black;
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+
+@media (min-width: 1200px){
+.container {
+
+    width: 90%;
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Margen{
+  background-color:  #4c68d7;
+  padding: 20px;
+  padding-bottom: -20px;
+  border-radius: 5px;
+  transform: rotate(20deg)
+}
+
+
+
+.tutankamon {
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+  padding-left: 100px;
+  padding-bottom: 80px;
+}
+
+.Sizeweb {
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+  background-color: white;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px
+}
+
+.CajaH{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-right: 90px;
+  padding-left: 50px;
+  align-items: center;
+  text-align: center;
+
+}
+.CajaBlanca{
+  background-color: White;
+  padding-top: 30px;
+}
+.h2Banner {
+  margin-top: 50px;
+  padding-left: 150px;
+  margin: 0px;
+  height: 70%;
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.h1Banner{
+  margin-top: : 150px;
+  padding-left: 150px;
+  margin: 0px;
+  height: 70%;
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper>.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+/* Carousel base class */
+
+.carousel {
+  margin-top: 30px;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}
+
+.carousel-inner>.item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media screen and (max-width: 767px) and (min-width: 1px) {
+  .carousel {
+    margin-top: 15px;
+    height: 150px;
+    margin-bottom: 60px;
+  }
+
+  .h1Banner{
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .h2Banner{
+    font-size: 40px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: white;
+  }
+  .CajaH{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .BackgroundImagen{
+    height: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

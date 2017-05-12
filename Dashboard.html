@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="zxx" ng-app="GaleriaApp" class ="Sizeweb" >
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="../AngularJS/ControladorGallery.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/master.css">
+    <link rel="stylesheet" href="../CSS/MenuSuperior.css">
+    <link rel="stylesheet" href="../CSS/GaleriaImagen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+</head>
+
+
+
+<body class="Sizeweb">
+
+  <div class="BackgroundImagen">
+
+      <h1 class="h1Banner"> Tienda Online de Arreglos Florales</h1>
+
+  </div>
+
+<div class="ContenedorPrincipal">
+
+
+    <div class="SystemBox">
+        <!--<div class="Banner">
+
+        </div> -->
+        <!-- Menu Superior -->
+        <div class="navbar-Principal">
+
+            <a class="activado" href="Dashboard"> Ofertas Especiales </a>
+            <a href="ArreglosFlorales">  Galeria de Fotos </a>
+            <a href="PedidoEspeciales"> Pedidos Especiales</a>
+            <a href="QuienesSomos"> Quienes Somos</a>
+
+        </div>
+
+        <!-- Cerramos menu Superior -->
+
+        <!-- Iniciamos galeria de imagenes en el Dashboard con las principales imagenes -->
+        <div ng-controller="GaleriaAppLista">
+            <div class="GaleriaImages">
+                <div class="GaleriaImagesItem" ng-repeat=" x in usersData">
+                    <div>
+                        <img ng-src="{{'data:image/png;base64,'+ x.PictureFlowers}}" width=80% height=80%>
+                        <!--<img data-ng-src="{{x.PicturteFlowers}}" alt="{{x.NombreFlower }}"> -->
+
+                        <h3 class="TituloProducto">{{x.NombreFlower }}</h3>
+                        <p class="DescripcionProducto">{{x.DescriptionFlowers }}</p>
+
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
